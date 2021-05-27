@@ -14,22 +14,17 @@ const Booklist = () => {
   );
 };
 const Book = () => {
+  const title = 'I Love You to The Moon And Back';
   return (
     <article className='book'>
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src='https://images-na.ssl-images-amazon.com/images/I/81QRyjf28tS._AC_UL200_SR200,200_.jpg'
+        alt='Book'
+      />
+      <h1>{title}</h1>
+      <h4>Dr. Seuss</h4>
     </article>
   );
 };
-const Image = () => {
-  return (
-    <img
-      src='https://images-na.ssl-images-amazon.com/images/I/81QRyjf28tS._AC_UL200_SR200,200_.jpg'
-      alt='Book-image'
-    />
-  );
-};
-const Title = () => <h1>Oh, the Places You'll Go! </h1>;
-const Author = () => <h4>Dr. Seuss</h4>;
+
 ReactDom.render(<Booklist />, document.getElementById('root'));
